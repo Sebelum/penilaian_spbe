@@ -14,6 +14,10 @@ class UserController extends BaseController
         return view('login');
     }
 
+    public function register(){
+        return view('register');
+    }
+
     public function lupapassword(){
        
         echo view("v_lupapassword");

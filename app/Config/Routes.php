@@ -9,6 +9,8 @@ use CodeIgniter\Router\RouteCollection;
  */
 $routes->get('/', 'Home::index');
 $routes->add('login', [UserController::class, 'login']);
+$routes->add('register', [UserController::class, 'register']);
+
 
 $routes->add('/lupapassword', [UserController::class, 'lupapassword']);
 $routes->add('/resetpassword', [UserController::class, 'resetpassword']);
