@@ -23,7 +23,7 @@ class NilaiController extends BaseController
     public function indikator_spbe()
     {
         $data = [
-            'templateJudul' => 'Indikator SPBE ',
+            'templateJudul' => 'Data Pendukung ',
             'templateAtas' => 'Indikator '
         ];
         echo view('staff/header', $data);
@@ -34,14 +34,62 @@ class NilaiController extends BaseController
     public function upload_pendukung()
     {
         $data = [
-            'templateJudul' => 'Upload Pendukung',
+            'templateJudul' => 'Upload Data Pendukung',
             'templateAtas' => 'Indikator'
         ];
         echo view('staff/header', $data);
         echo view('staff/upload_pendukung');
         echo view('staff/footer');
     }
-   
+
+    public function upload_perIndikator()
+    {
+        $data = [
+            'templateJudul' => 'Upload Data Pendukung',
+            'templateAtas' => 'Indikator'
+        ];
+        echo view('staff/header', $data);
+        echo view('staff/upload_perIndikator');
+        echo view('staff/footer');
+    }
+    public function lihat_nilai()
+    {
+        $data = [
+            'templateJudul' => 'Nilai',
+            'templateAtas' => 'Indikator',
+            'templateHal' => ' Dashboard',
+
+        ];
+        echo view('staff/header', $data);
+        echo view('staff/lihat_nilai');
+        echo view('staff/footer');
+    }
+    public function detail_nilai()
+    {
+        $data = [
+            'templateJudul' => 'Detail Nilai',
+            'templateAtas' => 'Indikator',
+            'templateHal' => ' Nilai',
+
+        ];
+        echo view('staff/header', $data);
+        echo view('staff/detail_nilai');
+        echo view('staff/footer');
+    }
+
+    public function rincian_nilai()
+    {
+        $data = [
+            'templateJudul' => 'Rincian Nilai',
+            'templateAtas' => 'Indikator',
+            'templateHal' => ' Nilai',
+
+        ];
+        echo view('staff/header', $data);
+        echo view('staff/rincian_nilai');
+        echo view('staff/footer');
+    }
+
     public function tambah_pendukung()
     {
         $data = [

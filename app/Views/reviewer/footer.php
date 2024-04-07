@@ -27,7 +27,7 @@
                 </div>
                 <div class="modal-body">Select "yes" below then the data will not be saved.</div>
                 <div class="modal-footer">                    
-                    <a class="btn btn-secondary" href="<?php echo site_url('staff/indikator_spbe')?>">yes</a>
+                    <a class="btn btn-secondary" href="<?php echo site_url('reviewer/bobot_penilaian')?>">yes</a>
                     <button class="btn btn-primary" type="button" data-dismiss="modal">no</button>
                 </div>
             </div>

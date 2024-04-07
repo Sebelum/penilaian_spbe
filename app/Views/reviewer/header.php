@@ -56,7 +56,7 @@
             <li class="nav-item">
                 <a class="nav-link" href=" ">
                 <i class="bi bi-house-door" style="color: white;"></i>                    
-                <span style="color: white;">Staff Kab/Kota </span></a>
+                <span style="color: white;">Reviewer</span></a>
             </li>
             
             
@@ -67,31 +67,31 @@
             </div>
 
             <li class="nav-item">
-                <a class="nav-link" href="<?php echo site_url('staff/v_dashboard')?>">
+                <a class="nav-link" href="<?php echo site_url('reviewer/v_dashboard')?>">
                 <i class="bi bi-speedometer2" style="color: white;"></i>                    
                 <span style="color: white;">Dashboard</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="<?php echo site_url('reviewer/bobot_penilaian')?>">
+                <i class="bi bi-menu-down" style="color: white;"></i>                    
+                <span style="color: white;">Bobot Penilaian</span></a>
             </li>
             <li class="nav-item active">
                 <a class="nav-link" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true"
                     aria-controls="collapseTwo">
                     <i class="bi bi-clipboard2-data" style="color: white;"></i>
-                    <span>Indikator SPBE</span>
+                    <span>Penilaian</span>
                 </a>
                 <div id="collapseTwo" class="collapse show" aria-labelledby="headingTwo"
                     data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">option:</h6>                        
-                        <a class="collapse-item" href="<?php echo site_url('staff/lihat_nilai')?>">Nilai </a>
-                        <a class="collapse-item" href="<?php echo site_url('staff/indikator_spbe')?>">Data pendukung</a>
+                        <a class="collapse-item" href="<?php echo site_url('reviewer/belum_dinilai')?>">Belum Dinilai </a>
+                        <a class="collapse-item" href="<?php echo site_url('reviewer/rekap_nilai')?>">Rekap Nilai</a>
                     </div>
                 </div>
             </li>
 
-            <li class="nav-item">
-                <a class="nav-link" href="<?php echo site_url('staff/unduh_peraturan')?>">
-                <i class="bi bi-menu-down" style="color: white;"></i>
-                    <span>Peraturan</span></a>
-            </li>
 
             <li class="nav-item">
                 <a class="nav-link" href="<?php echo site_url('/logout')?>">

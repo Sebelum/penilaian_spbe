@@ -53,12 +53,17 @@
                         </div>
 
                         <div class="mb-3">
-                            <label for="formFile" class="form-label">File Peraturan :</label>
-                            <input class="form-control" type="file" id="formFile">
+                            <label for="file_peraturan" class="form-label">File Peraturan :</label>
+                            <div class="input-group custom-file-button">
+                                <label class="input-group-text"  for="inputGroupFile"><i class="bi bi-file-pdf-fill" style="color: red;"></i></label>
+                                <input type="file" class="form-control" id="inputGroupFile" >
+                            </div>
                         </div>
                         <div class="modal-footer">
-                            <a href="<?= base_url('admin/tambah_dokumen') ?>" type="button" class="btn btn-secondary" data-bs-dismiss="modal" data-toggle="modal" data-target="#cancelModal">cancel</a>
-                            <button type="submit" class="btn btn-primary">save</button>
+                            <a href="<?= base_url('admin/tambah_dokumen') ?>" type="button" 
+                            class="btn btn-secondary" data-bs-dismiss="modal" 
+                            data-toggle="modal" data-target="#cancelModal">tutup</a>
+                            <button type="submit" class="btn btn-primary">simpan</button>
                         </div>
                     </form>
                 </div>
